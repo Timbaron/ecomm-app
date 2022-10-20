@@ -12,41 +12,15 @@
             <div id="folloersSlider" class="dvslider">
 
                 <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="followers-inner">
-                            <a href="listing.html">
-                                <img src="assets/images/foodstuff-img.png">
-                            </a>
+                    @foreach($categories as $category)
+                        <div class="item">
+                            <div class="followers-inner">
+                                <a href="listing.html">
+                                    <img src="{{$category->image}}" loading="lazy">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="followers-inner">
-                            <a href="listing.html">
-                                <img src="assets/images/packfood_img.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="followers-inner">
-                            <a href="listing.html">
-                                <img src="assets/images/fruits-img.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="followers-inner">
-                            <a href="listing.html">
-                                <img src="assets/images/packfood_img.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="followers-inner">
-                            <a href="listing.html">
-                                <img src="assets/images/foodstuff-img.png">
-                            </a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
 
             </div>
