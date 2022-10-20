@@ -2,6 +2,7 @@
 namespace App\Services;
 
 use App\Models\Category;
+use App\Models\FoodItem;
 
 class CategoryService {
 
@@ -14,6 +15,13 @@ class CategoryService {
     {
         $categories = Category::all();
         return $categories;
+    }
+
+    public static function getFoodItems(){
+        // get all fooditems and group them by category
+        $foodItems = FoodItem::all()->groupBy('category');
+        return $foodItems;
+
     }
 
 }
