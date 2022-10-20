@@ -9,11 +9,9 @@ use Illuminate\Support\Facades\Cache;
 class HomeController extends Controller
 {
     public function index($currentPage = 15){
-        // dd($page);
         /* Calling the static getCategories() method in the CategoryService class and passing the result to
         the welcome view. */
         $categories = CategoryService::getCategories();
-
         /* Calling the static getFoodItems() method in the CategoryService class and passing the result
         to the welcome view. */
         $foodItems = CategoryService::getFoodItems();
