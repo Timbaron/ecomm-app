@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/* This is a route definition. It is telling Laravel that when a user visits the root of the website,
+it should call the `index` method of the `HomeController` class. */
+Route::get('/', [HomeController::class,'index'])->name('home');
