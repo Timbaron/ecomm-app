@@ -95,7 +95,6 @@
                 hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
 
                 items.forEach(function(item, index) {
-                    console.log(item.innerText, index);
                     if (index > maxItems - 1) {
                         item.classList.add(hiddenClass);
                     }
@@ -139,7 +138,6 @@
                 hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
 
                 items.forEach(function(item, index) {
-                    console.log(item.innerText, index);
                     if (index > maxItems - 1) {
                         item.classList.add(hiddenClass);
                     }
@@ -183,7 +181,6 @@
                 hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
 
                 items.forEach(function(item, index) {
-                    console.log(item.innerText, index);
                     if (index > maxItems - 1) {
                         item.classList.add(hiddenClass);
                     }
@@ -227,7 +224,6 @@
                 hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
 
                 items.forEach(function(item, index) {
-                    console.log(item.innerText, index);
                     if (index > maxItems - 1) {
                         item.classList.add(hiddenClass);
                     }
