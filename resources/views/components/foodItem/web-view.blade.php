@@ -84,6 +84,8 @@
             },
             success: function(data) {
                 loadShopList(data);
+                /* The below code is a simple example of pagination. It is showing 12 items at a time
+                and when the user clicks on the load more button, it will show the next 12 items. */
                 var allItems = document.querySelector('#items');
                 var items = Array.from(allItems.querySelectorAll(".item"));
                 var loadMore = document.getElementById("loadMore");
@@ -126,6 +128,8 @@
             },
             success: function(data) {
                 loadShopList(data);
+                /* The below code is a simple example of pagination. It is showing 12 items at a time
+                and when the user clicks on the load more button, it will show the next 12 items. */
                 var allItems = document.querySelector('#items');
                 var items = Array.from(allItems.querySelectorAll(".item"));
                 var loadMore = document.getElementById("loadMore");
@@ -168,6 +172,8 @@
             },
             success: function(data) {
                 loadPallyList(data);
+                /* The below code is a simple example of pagination. It is showing 12 items at a time
+                and when the user clicks on the load more button, it will show the next 12 items. */
                 var allItems = document.querySelector('#items');
                 var items = Array.from(allItems.querySelectorAll(".item"));
                 var loadMore = document.getElementById("loadMore");
@@ -210,6 +216,8 @@
             },
             success: function(data) {
                 loadRecommended(data);
+                /* The below code is a simple example of pagination. It is showing 12 items at a time
+                and when the user clicks on the load more button, it will show the next 12 items. */
                 var allItems = document.querySelector('#items');
                 var items = Array.from(allItems.querySelectorAll(".item"));
                 var loadMore = document.getElementById("loadMore");
