@@ -62,11 +62,9 @@
             </div>
         </div>
         <div class="load-bg text-center mb-5 d-none d-lg-block">
-            <a href="">
-                <button typ="button" class="load-more text-uppercase ">
-                    Load more items
-                </button>
-            </a>
+            <button type="button" id="loadMore" class="load-more text-uppercase ">
+                Load more items
+            </button>
         </div>
     </div>
     </div>
@@ -86,6 +84,35 @@
             },
             success: function(data) {
                 loadShopList(data);
+                var allItems = document.querySelector('#items');
+                var items = Array.from(allItems.querySelectorAll(".item"));
+                var loadMore = document.getElementById("loadMore");
+                maxItems = 12;
+                loadItems = 12;
+                hiddenClass = "hiddenStyle";
+                hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
+
+                items.forEach(function(item, index) {
+                    console.log(item.innerText, index);
+                    if (index > maxItems - 1) {
+                        item.classList.add(hiddenClass);
+                    }
+                });
+
+                loadMore.addEventListener("click", function() {
+                    [].forEach.call(document.querySelectorAll("." + hiddenClass), function(
+                        item,
+                        index
+                    ) {
+                        if (index < loadItems) {
+                            item.classList.remove(hiddenClass);
+                        }
+
+                        if (document.querySelectorAll("." + hiddenClass).length === 0) {
+                            loadMore.style.display = "none";
+                        }
+                    });
+                });
             }
         });
     });
@@ -99,6 +126,35 @@
             },
             success: function(data) {
                 loadShopList(data);
+                var allItems = document.querySelector('#items');
+                var items = Array.from(allItems.querySelectorAll(".item"));
+                var loadMore = document.getElementById("loadMore");
+                maxItems = 12;
+                loadItems = 12;
+                hiddenClass = "hiddenStyle";
+                hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
+
+                items.forEach(function(item, index) {
+                    console.log(item.innerText, index);
+                    if (index > maxItems - 1) {
+                        item.classList.add(hiddenClass);
+                    }
+                });
+
+                loadMore.addEventListener("click", function() {
+                    [].forEach.call(document.querySelectorAll("." + hiddenClass), function(
+                        item,
+                        index
+                    ) {
+                        if (index < loadItems) {
+                            item.classList.remove(hiddenClass);
+                        }
+
+                        if (document.querySelectorAll("." + hiddenClass).length === 0) {
+                            loadMore.style.display = "none";
+                        }
+                    });
+                });
             }
         });
     });
@@ -112,6 +168,35 @@
             },
             success: function(data) {
                 loadPallyList(data);
+                var allItems = document.querySelector('#items');
+                var items = Array.from(allItems.querySelectorAll(".item"));
+                var loadMore = document.getElementById("loadMore");
+                maxItems = 12;
+                loadItems = 12;
+                hiddenClass = "hiddenStyle";
+                hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
+
+                items.forEach(function(item, index) {
+                    console.log(item.innerText, index);
+                    if (index > maxItems - 1) {
+                        item.classList.add(hiddenClass);
+                    }
+                });
+
+                loadMore.addEventListener("click", function() {
+                    [].forEach.call(document.querySelectorAll("." + hiddenClass), function(
+                        item,
+                        index
+                    ) {
+                        if (index < loadItems) {
+                            item.classList.remove(hiddenClass);
+                        }
+
+                        if (document.querySelectorAll("." + hiddenClass).length === 0) {
+                            loadMore.style.display = "none";
+                        }
+                    });
+                });
             }
         });
     });
@@ -125,18 +210,47 @@
             },
             success: function(data) {
                 loadRecommended(data);
+                var allItems = document.querySelector('#items');
+                var items = Array.from(allItems.querySelectorAll(".item"));
+                var loadMore = document.getElementById("loadMore");
+                maxItems = 12;
+                loadItems = 12;
+                hiddenClass = "hiddenStyle";
+                hiddenItems = Array.from(document.querySelectorAll(".hiddenStyle"));
+
+                items.forEach(function(item, index) {
+                    console.log(item.innerText, index);
+                    if (index > maxItems - 1) {
+                        item.classList.add(hiddenClass);
+                    }
+                });
+
+                loadMore.addEventListener("click", function() {
+                    [].forEach.call(document.querySelectorAll("." + hiddenClass), function(
+                        item,
+                        index
+                    ) {
+                        if (index < loadItems) {
+                            item.classList.remove(hiddenClass);
+                        }
+
+                        if (document.querySelectorAll("." + hiddenClass).length === 0) {
+                            loadMore.style.display = "none";
+                        }
+                    });
+                });
             }
         });
     });
 
-   /* The below code is loading the data from the API into the HTML page. */
+    /* The below code is loading the data from the API into the HTML page. */
     function loadShopList(data) {
         holder = document.getElementById('items');
         document.getElementById('count').innerText = data.length;
         holder.innerHTML = '';
         data.forEach((shop, index) => {
             var item = `
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 item">
                                     <div class="pally-inner ">
                                     <div class="products-img-wrapper  mb-3 pointer">
                         <a href="product_detail.html">
@@ -194,7 +308,7 @@
         holder.innerHTML = '';
 
         data.forEach((pally, index) => {
-            var item = `<div class="col-md-6 col-lg-3">
+            var item = `<div class="col-md-6 col-lg-3 item">
                                     <div class="pally-inner ">
                                         <div class="products-img-wrapper  mb-3 pointer">
                                             <a href="#">
@@ -245,7 +359,7 @@
         document.getElementById('count').innerText = data.length;
         holder.innerHTML = '';
         data.forEach((recommended, index) => {
-            var item = `<div class="col-md-6 col-lg-3">
+            var item = `<div class="col-md-6 col-lg-3 item">
                                 <div class="pally-inner">
                                     <div class="products-img-wrapper  mb-3 pointer">
                                         <a href="#">
@@ -266,7 +380,7 @@
                                                 arrow_right_alt
                                             </span>${recommended.percentage}% | ${recommended.season} Season</a>
                                         <h6 class="mb-2 mt-2 font-weight-bold simhead">₦${recommended.price} per kg</h6>
-                                        <p class="text-red mb-2">1kg of kg left</p>
+                                        <p class="text-red mb-2">1kg of kg ${Math.floor(Math.random() * 46 + 20)} left</p>
                                         <div class="preorder-progress stat-bar mb-2">
                                             <span class="stat-bar-rating" role="stat-bar" style="width: ${recommended.percentage}%;">${recommended.percentage}%</span>
                                         </div>

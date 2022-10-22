@@ -289,7 +289,7 @@ header .active {
     box-shadow: 0 0 3px hsl(0deg 0% 0% / 18%);
     margin: 0 0 0 -96px;
     z-index: 9998;
-}  
+}
 .navigation-wrap .dropdown span.material-icons {
     vertical-align: middle;
     padding: 0 10px 0 0;
@@ -1576,7 +1576,7 @@ header .search-dropdown{
 
 
 
-/* 
+/*
 fedit-
 h1 small {
   display: block;
@@ -2455,7 +2455,7 @@ fieldset.rate-review label {
 /* Hover highlights */
 .rate-review input:checked + label:focus, input:checked ~ label:focus, /* highlight current and previous stars */
 .rate-review input:checked ~ label:focus ~ label, /* highlight previous selected stars for new rating */
-.rate-review label:focus ~ input:checked ~ label /* highlight previous selected stars */ { color: #FAB814;  } 
+.rate-review label:focus ~ input:checked ~ label /* highlight previous selected stars */ { color: #FAB814;  }
 
 
 .process-review{
@@ -2868,7 +2868,7 @@ p.blog-status {
     .mylist-btn {
         margin: 80px 0 30px 0 !important;
     }
-    
+
     .sidebar li {
         padding: 8px 0 4px 8px;
     }
@@ -2882,7 +2882,7 @@ p.blog-status {
     .refer-wrapper{
         margin-bottom: 20px;
     }
-    
+
 }
 @media (max-width:720px) {
     .drop-menu {
@@ -4277,7 +4277,7 @@ li.start-clr {
     .bottommake-list.postion{
         bottom: 9% !important;
     }
-    
+
 
 }
 
@@ -4390,7 +4390,7 @@ li.start-clr {
     .categories_list .listingslider .item {
         width: 17.7% !important;
     }
-    
+
     .brown-btn{
         border: 0.9px solid #B3561B;
         overflow: hidden;
@@ -4417,7 +4417,7 @@ li.start-clr {
     .process-review .no-ratings {
         top: 20px;
     }
-    
+
     .fruits {
         right: 12%;
     }
@@ -4445,8 +4445,8 @@ li.start-clr {
     .blog-content{
         width: 75%;
     }
-    
-    
+
+
 }
 
 @media (max-width: 991px) {
@@ -5410,7 +5410,7 @@ li.start-clr {
 .user-block h4{
     padding: 0 15px;
 }
-.saerch-bar span.material-icons{ 
+.saerch-bar span.material-icons{
     font-size: 18px;
 }
 #categoires-bg .item img {
@@ -5472,7 +5472,7 @@ li.start-clr {
         white-space: nowrap;
         overflow: hidden;
     }
-    
+
     .city-block form{
         width: 90%;
     }
@@ -5667,7 +5667,7 @@ li.start-clr {
     .veg-2 {
         right: 0;
     }
-    
+
 
 }
 
@@ -7725,7 +7725,7 @@ a.follower-icon:hover {
     #my-followers .MS-controls .MS-right {
         top: -40%;
     }
-    
+
     .food-items-bg .select-bg .form-control {
         font-size: 12px;
         height: 40px;
@@ -7829,7 +7829,7 @@ a.follower-icon:hover {
     .select-bg li {
         width: 32%;
     }
- 
+
     .inner-head h5,
     .pally-inner h5 {
         font-size: 14px;
@@ -7852,7 +7852,7 @@ a.follower-icon:hover {
     .recommended-bg .rating-widget {
         width: 95%;
     }
-    
+
     .maxi {
         object-fit: cover;
     }
@@ -8901,7 +8901,7 @@ a.follower-icon:hover {
         width: 100%;
         padding: 14px;
     }
-   
+
 }
 @media (max-width:767.98px) {
     .load-btn a {
@@ -8995,8 +8995,8 @@ a.follower-icon:hover {
     .mobile-viewproducts .container {
         padding: 0 0 0 10px;
     }
-    
-    
+
+
     .simhead {
         font-size: 12px;
         margin-top: 8px !important;
@@ -9016,7 +9016,7 @@ a.follower-icon:hover {
     .saveproducts-wrapper .foodtabs .nav-link.active {
         padding: .5rem 1rem !important;
     }
-    
+
     .stat-bar {
         height: 4px;
         margin-bottom: 4px !important;
@@ -9164,12 +9164,12 @@ a.follower-icon:hover {
     .fillter-modal-bg .btneffects-bg {
         width: 56%;
     }
-   
+
     .foodtabs .nav-link {
         padding: 8px 34px;
     }
-    
-    
+
+
 }
 @media (max-width:575px) {
     .inner-user img {
@@ -9441,7 +9441,7 @@ a.follower-icon:hover {
     .big-text{
         font-size: 16px;
     }
-    
+
     .listfillter-modal-bg select.form-control {
         border: 2px solid #aaaa;
         width: 80%;
@@ -9498,7 +9498,7 @@ a.follower-icon:hover {
     .box-outline {
         padding: 30px 6px 0 6px;
     }
-    
+
     .mobile-icon {
         padding: 0 10px;
     }
@@ -9543,7 +9543,7 @@ a.follower-icon:hover {
         width: 140px;
         height: 140px;
     }
-   
+
     .foodtabs .nav-link {
         padding: 8px 28px;
     }
@@ -9562,7 +9562,7 @@ a.follower-icon:hover {
     .inner_empty-cart h5 {
         font-size: 16px;
     }
-    
+
     .inner_contact_wrap:before {
         width: 250px;
         top: 80px;
@@ -9673,7 +9673,7 @@ a.follower-icon:hover {
     .reviews-section .load-btn .btn{
         width: 100%;
     }
-   
+
 }
 
 @media (max-width:460px) {
@@ -9805,7 +9805,7 @@ a.follower-icon:hover {
     .foodtabs .nav-link {
         padding: 8px 16px;
     }
-    
+
     .mobile-icon {
         padding: 0 6px 0 0;
     }
@@ -9839,7 +9839,7 @@ a.follower-icon:hover {
         min-height: auto;
         height: auto;
     }
-    
+
 }
 
 @media (max-width:390px) {
@@ -9891,7 +9891,7 @@ a.follower-icon:hover {
     .mx-4 {
         margin-left: 0.8rem!important;
     }
-    
+
     .pally-content h6 {
         font-size: 14px;
         font-weight: 400;
@@ -9983,7 +9983,7 @@ a.follower-icon:hover {
     #MobfollowingSlider .MS-controls {
         top: 76%;
     }
-    
+
     .myself-content .addbutton-bg {
         width: 44%;
     }
@@ -10126,7 +10126,7 @@ a.follower-icon:hover {
     .mobile-icon p.mb-0 {
         font-size: 14px;
     }
-   
+
     .text-red {
         font-size: 13px;
         margin-bottom: 4px !important;
@@ -10216,5 +10216,16 @@ a.follower-icon:hover {
     border-color: transparent;
 }
 .out_of_stock_block button.btn-effects::before {
-    background: transparent;   
+    background: transparent;
 }
+
+.hiddenStyle {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
