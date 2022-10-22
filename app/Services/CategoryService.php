@@ -24,6 +24,11 @@ class CategoryService {
 
     }
 
+    public static function getItem($item){
+        $item = FoodItem::whereCategory($item)->get()->toArray();
+        return $item;
+    }
+
 }
 
 
